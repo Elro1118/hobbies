@@ -12,9 +12,24 @@ body {
 	background-color: gray;
 	padding: 2rem;
 }
+figcaption {
+	text-align: justify;
+	background-color: #222;
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 5px;
+	text-align: center;
+	width: 10rem;
+}
 
 .header {
 	background: tomato;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
+}
+
+.myHeaderTitle {
+	text-align: center;
 }
 
 .footer {
@@ -23,26 +38,29 @@ body {
 	text-align: center;
 }
 
+.myMiddleBox {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
 .main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	text-align: left;
 	background: deepskyblue;
 	font-size: 1.5rem;
-	margin: 0px;
+	width: 85%;
 }
-
-.aside-1 {
+.aside {
 	background: gold;
-	margin: 0px;
+	width: 15%;
 }
 
 .wrapper {
 	display: flex;
-	flex-flow: column;
-}
-
-.wrapper > * {
-	padding: 10px;
-	flex: 1 100%;
+	flex-flow: column wrap;
 }
 
 .ImageList {
@@ -56,12 +74,32 @@ body {
 	justify-content: baseline;
 }
 
-figcaption {
-	text-align: justify;
-	background-color: #222;
-	color: #fff;
-	font-size: 1.1rem;
-	padding: 5px;
-	text-align: center;
-	width: 10rem;
+/* Medium screens */
+@media all and (max-width: 600px) {
+	body {
+		font-size: 0.5rem;
+	}
+	.wrapper {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.main {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		font-size: 0.5rem;
+		width: 100%;
+	}
+	.aside {
+		width: 100%;
+	}
+	.myDescription {
+		font-size: 0.5rem;
+	}
+	.myFigure {
+		width: 5rem;
+	}
+	.footer {
+		font-size: 0.5rem;
+	}
 }
