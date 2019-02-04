@@ -73,7 +73,20 @@ figcaption {
 	display: flex;
 	justify-content: baseline;
 }
-
+/*------------Fishing Day---------------*/
+#myFishingDay {
+	width: 35%;
+}
+.mainLink {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	text-align: left;
+	background: deepskyblue;
+	font-size: 1.5rem;
+	margin: 0px;
+}
+/*---------------------------------------*/
 /* Medium screens */
 @media all and (max-width: 600px) {
 	body {
